@@ -25,7 +25,7 @@ def spuz(lower, upper, size):
 
     while null != True:  # Start of While Loop
 
-      m=0
+      m = 0
 
       for j in range (0, len(a)):  # Start of For Loop
         a[j] = random.randint(0, 10) * a[j]
