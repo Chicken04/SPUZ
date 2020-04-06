@@ -18,7 +18,7 @@ def spuz(iteration, size, rang):
     a = []
 
     for i in range(0, size):  # Start of For Loop
-      a.append(random.randint(0, rang))
+      a.append(random.randint(0, rang+1))
       # End of For Loop
 
     f = 0
@@ -52,4 +52,4 @@ for filename in filenames:
       o = int(filename.replace(".txt",""))
       result = spuz(o, vec_size, rang)
       for i in range(0,len(result)):
-        output_file.write(str(result[i]) + " ")
+        output_file.write(str(result[i]) + "\n")
